@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginBottom="5dp">
+
+    <RelativeLayout android:id="@+id/userinfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_light"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgUserProfilePic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:id="@+id/txtUserName"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgUserProfilePic"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:foregroundGravity="center_vertical"
+            android:paddingTop="15dp"
+            android:paddingLeft="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posted Time"
+            android:id="@+id/txtRelativeTime"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgUserProfilePic"
+            android:layout_centerVertical="true"
+            android:foregroundGravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:paddingTop="15dp"
+            android:paddingRight="2dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txtCaption"
+        android:layout_below="@+id/userinfoLayout"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="5dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgPostImage"
+        android:layout_below="@+id/txtCaption"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Like Count"
+        android:id="@+id/txtLikeCount"
+        android:layout_below="@+id/imgPostImage"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Comment Count"
+        android:id="@+id/txtCommentCount"
+        android:layout_toRightOf="@+id/txtLikeCount"
+        android:layout_below="@+id/imgPostImage"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:paddingRight="2dp"
+        />
+
+</RelativeLayout>
